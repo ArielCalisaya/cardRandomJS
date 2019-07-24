@@ -1,16 +1,53 @@
 @import "~bootstrap/scss/bootstrap.scss";
-
-/* 
-    body{
-        background: #BDBDBD;
-    }
-    
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+.container {
+  background-color: white;
+}
+body {
+  border: 15rem solid green;
+}
+body {
+  background-color: black;
+}
+.valor {
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+  margin: 0;
+  text-align: center;
+  padding-right: 5rem;
+  padding-left: 5rem;
+}
+.valor:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 3rem;
+}
+.valor:after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 3rem;
+}
+.valor.Corazones::after,
+.valor.Corazones::before {
+  content: "\2665";
+  color: Red;
+}
+.valor.Pica::after,
+.valor.Pica::before {
+  content: "\2660";
+  color: black;
+}
+.valor.Trebol::after,
+.valor.Trebol::before {
+  content: "\2663";
+  color: black;
+}
+.valor.Diamante::after,
+.valor.Diamante::before {
+  content: "\2666";
+  color: Red;
+}
+body {
+  margin: 15rem;
+}
